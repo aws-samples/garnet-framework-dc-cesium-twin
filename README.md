@@ -32,7 +32,7 @@ The front-end is react based, and we will use the cesium-js plugin.
 The other libraries used are tailwind-css and shadcn-ui.
 
 Clone the repository:  
-`git clone git@ssh.gitlab.aws.dev:garnet-framework/garnet-digital-twin.git`  
+`git clone https://github.com/aws-samples/garnet-framework-dc-cesium-twin.git`  
 `cd` into the directory  
 
 copy .env.example to .env and update it with your Garnet base URL, For instance :  
