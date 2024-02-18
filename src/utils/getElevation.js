@@ -7,8 +7,8 @@ export const getItemTerrainHeight = async (item) => {
     const pointOfInterest = [
       Cartographic.fromCartesian(
         Cartesian3.fromDegrees(
-          item.location.value.coordinates[0],
-          item.location.value.coordinates[1]
+          Number(item.location.value.coordinates[0]),
+          Number(item.location.value.coordinates[1])
         )
       ),
     ];

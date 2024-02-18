@@ -230,8 +230,8 @@ function App() {
               <CameraFlyTo
                 duration={5}
                 destination={Cartesian3.fromDegrees(
-                  stations[0].location?.value.coordinates[0],
-                  stations[0].location?.value.coordinates[1],
+                  Number(stations[0].location?.value.coordinates[0]),
+                  Number(stations[0].location?.value.coordinates[1]),
                   3000
                 )}
               />
@@ -253,8 +253,8 @@ function App() {
                       }
                       key={i}
                       position={Cartesian3.fromDegrees(
-                        station.location?.value.coordinates[0],
-                        station.location?.value.coordinates[1],
+                        Number(station.location?.value.coordinates[0]),
+                        Number(station.location?.value.coordinates[1]),
                         bikeTerrainHeight[station.id] + Number(import.meta.env.VITE_HEIGHT_OFFSET)
                       )}
                       point={{
@@ -288,8 +288,8 @@ function App() {
                     }
                     key={i}
                     position={Cartesian3.fromDegrees(
-                      parking.location.value.coordinates[0],
-                      parking.location.value.coordinates[1],
+                      Number(parking.location.value.coordinates[0]),
+                      Number(parking.location.value.coordinates[1]),
                       parkingTerrainHeight[parking.id] + Number(import.meta.env.VITE_HEIGHT_OFFSET)
                     )}
                     point={{
